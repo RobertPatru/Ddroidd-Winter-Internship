@@ -1,7 +1,7 @@
 const allInputs = document.querySelectorAll('input');
 const joinUsBtn = document.querySelector('.submit-btn');
 
-joinUsBtn.addEventListener('form', submitForm);
+joinUsBtn.addEventListener('click', submitForm);
 
 function submitForm(event) {
     event.preventDefault();
@@ -38,8 +38,8 @@ function disableWarning() {
     }
 }
 
-var onloadCallback = function() {
-    grecaptcha.render('html_element', {
-      'sitekey' : '6LdWl_8dAAAAAL5DZ3zTBEbuGrYOzoeLmHzxx9A4'
-    });
-  };
+// var onloadCallback = function() {
+//     grecaptcha.render('html_element', {
+//       'sitekey' : '6LdWl_8dAAAAAL5DZ3zTBEbuGrYOzoeLmHzxx9A4'
+//     });
+//   };
