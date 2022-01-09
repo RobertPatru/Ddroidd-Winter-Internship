@@ -119,15 +119,18 @@ input {
 /* Join Us Btn */
 .container-btn-on-second-page {
     width: 818px;
+    margin-top: 30px;
+
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 5px red solid; */
 }
 
-.btn-second-page {
+.submit-btn {
     font: normal normal var(--font-weight-bold) 17px/23px Open Sans;
     width: 260px;
     height: 35px;
-    transform: translateY(-35px);
 }
 
 .btn-second-page:active {

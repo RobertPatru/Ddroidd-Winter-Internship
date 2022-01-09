@@ -1,15 +1,19 @@
 const allInputs = document.querySelectorAll('input');
-const joinUsBtn = document.querySelector('.btn-second-page');
+const joinUsBtn = document.querySelector('.submit-btn');
 
 
 console.log(joinUsBtn);
 
 joinUsBtn.addEventListener('click', submitForm);
 
-function submitForm(e) {
+function submitForm(event) {
+    event.preventDefault();
     let okay = true;
 
     for (let i = 0; i < allInputs.length; i++) {
+        if (i == 3)
+            i = i + 1;
+
         if (allInputs[i].value == '') {
             allInputs[i].style.border = '2px solid red';
             okay = false;
@@ -33,8 +37,9 @@ function submitForm(e) {
 
 function disableWarning() {
     for (let i = 0; i < allInputs.length; i++) {
-
         allInputs[i].style.border = 'none';
-        
     }
 }
+
+
+console.log(allInputs);
