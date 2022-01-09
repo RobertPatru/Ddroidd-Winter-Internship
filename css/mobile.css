@@ -121,11 +121,42 @@
 @media (max-width: 1000px) and (orientation: landscape) {
     #header {
         font-size: 12px;
-        height: 200px;
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .title-inside-header {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .join-us-btn {
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0%;
     }
 
     .container-whole-second-page {
         height: 370%;
+    }
+
+    .dissable-on-mobile{
+        display: none;
+    }
+
+    img:nth-child(2) {
+       display: none;
+    }
+
+    .submit-btn {
+        margin-top: 50px;
+    }
+
+    .dissappear {
+        width: 100px;
     }
 }
