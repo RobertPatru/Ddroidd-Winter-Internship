@@ -1,11 +1,12 @@
 const allInputs = document.querySelectorAll('input');
 const joinUsBtn = document.querySelector('.submit-btn');
+const captcha = document.querySelector('.g-recaptcha');
 
 joinUsBtn.addEventListener('click', submitForm);
 
 function submitForm(event) {
-    event.preventDefault();
     let okay = true;
+    const response = grecaptcha.getResponse();
 
     for (let i = 0; i < allInputs.length; i++) {
         if (i == 3)
@@ -15,34 +16,22 @@ function submitForm(event) {
             allInputs[i].style.border = '2px solid red';
             okay = false;
         }
-        
+    }
 
-        console.log(okay);
+    if (response.length == 0) {
+        captcha.style.border = '2px solid red';
     }
 
     setTimeout((disableWarning), 2000);
-
+  
     if (okay == true) {
-        console.log('toate conditiile au fost indeplinite');
         location.href = "/last-page.html";
-    }
-    else {
-        console.log('NU AU FOST INDEPLINITE CONDITIILE');
-
     }
 }
 
 function disableWarning() {
     for (let i = 0; i < allInputs.length; i++) {
-        allInputs[i].style.border = 'none';
+        allInputs[i].style.border = 'none';      
     }
-
-    const response = grecaptcha.getResponse();
-    alert(response);
+    captcha.style.border = 'none';
 }
-
-
-document.querySelector('.g-recaptcha').addEventListener('click', function() {
-    const response = grecaptcha.getResponse();
-    alert(response);
-});
