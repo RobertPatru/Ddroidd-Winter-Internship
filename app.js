@@ -5,6 +5,8 @@ const captcha = document.querySelector('.g-recaptcha');
 joinUsBtn.addEventListener('click', submitForm);
 
 function submitForm(event) {
+    event.preventDefault();
+
     let okay = true;
     const response = grecaptcha.getResponse();
 
