@@ -38,8 +38,8 @@ function disableWarning() {
     }
 }
 
-// var onloadCallback = function() {
-//     grecaptcha.render('html_element', {
-//       'sitekey' : '6LdWl_8dAAAAAL5DZ3zTBEbuGrYOzoeLmHzxx9A4'
-//     });
-//   };
+console.log(document.querySelector('.g-recaptcha').value);
+
+function recaptcha_callback() {
+    console.log('captcha a fost bifata');
+}
