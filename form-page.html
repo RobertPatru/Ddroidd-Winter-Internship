@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ddroidd</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- I kept this style for the header, body section and footer stiles -->
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/form_page.css">
-    <link rel="stylesheet" href="/css/mobile.css">
-
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
+    <link rel="stylesheet" href="/css/mobile.css">     
 </head>
 <body>
     <div class="container-whole-second-page">
@@ -26,9 +24,7 @@
             <a href="#" class="join-us-btn btn-inside-header dissappear">Join Us</a>
         </header>
 
-        <section id="body-form-page-section">
-           
-            
+        <section id="body-form-page-section">               
             <form id="form">
                 <h1 class="form-title">Application Form</h1>
                 <!-- First Name and Last Name togheter -->
@@ -91,14 +87,10 @@
                 </div>
 
                 <div class="container-btn-on-second-page">
-                    <div class="g-recaptcha" data-sitekey="6LdWl_8dAAAAAL5DZ3zTBEbuGrYOzoeLmHzxx9A4"></div>
+                    <div class="g-recaptcha" data-sitekey="6LdWl_8dAAAAAL5DZ3zTBEbuGrYOzoeLmHzxx9A4" data-callback="recaptcha_callback"></div>
                     <input type="submit" class="join-us-btn submit-btn" value="Join Us">                 
                 </div>
-            </form>
-
-           
-            
-           
+            </form>           
 
         </section>
 
@@ -107,6 +99,7 @@
         </footer>
        
         <script src="/app.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     </div>
 </body>
 </html>
