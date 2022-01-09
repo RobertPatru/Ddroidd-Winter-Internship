@@ -1,9 +1,6 @@
 const allInputs = document.querySelectorAll('input');
 const joinUsBtn = document.querySelector('.submit-btn');
 
-
-console.log(joinUsBtn);
-
 joinUsBtn.addEventListener('form', submitForm);
 
 function submitForm(event) {
@@ -41,5 +38,8 @@ function disableWarning() {
     }
 }
 
-
-console.log(allInputs);
+var onloadCallback = function() {
+    grecaptcha.render('html_element', {
+      'sitekey' : '6LdWl_8dAAAAAL5DZ3zTBEbuGrYOzoeLmHzxx9A4'
+    });
+  };
