@@ -30,15 +30,15 @@ function submitForm(event) {
         console.log('NU AU FOST INDEPLINITE CONDITIILE');
 
     }
-
-
-  
 }
 
 function disableWarning() {
     for (let i = 0; i < allInputs.length; i++) {
         allInputs[i].style.border = 'none';
     }
+
+    const response = grecaptcha.getResponse();
+    alert(response);
 }
 
 
