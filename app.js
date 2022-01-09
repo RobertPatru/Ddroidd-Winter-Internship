@@ -8,6 +8,7 @@ function submitForm(event) {
     event.preventDefault();
 
     let okay = true;
+    let verifyCaptcha = false;
     const response = grecaptcha.getResponse();
 
     for (let i = 0; i < allInputs.length; i++) {
@@ -22,11 +23,13 @@ function submitForm(event) {
 
     if (response.length == 0) {
         captcha.style.border = '2px solid red';
+    } else {
+        verifyCaptcha = true;
     }
 
     setTimeout((disableWarning), 2000);
   
-    if (okay == true) {
+    if (okay == true && verifyCaptcha == true) {
         location.href = "/last-page.html";
     }
 }
