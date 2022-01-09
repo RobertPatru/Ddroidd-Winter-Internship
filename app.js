@@ -12,26 +12,26 @@ function submitForm(event) {
     const response = grecaptcha.getResponse();
 
     for (let i = 0; i < allInputs.length; i++) {
-        if (i == 3)
+        if (i == 3)        // pass over the "Address Line 2"
             i = i + 1;
 
-        if (allInputs[i].value == '') {
-            allInputs[i].style.border = '2px solid red';
+        if (allInputs[i].value == '') {     // the input is empty
+            allInputs[i].style.border = '2px solid red';    // a red border will apear
             okay = false;
         }
     }
 
-    if (response.length == 0) {
-        captcha.style.border = '2px solid red';
+    if (response.length == 0) {     // if the response from captcha is empty
+        captcha.style.border = '2px solid red';     // a red border will apear
     } else {
         verifyCaptcha = true;
-    }
-
-    setTimeout((disableWarning), 2000);
+    } 
   
-    if (okay == true && verifyCaptcha == true) {
+    if (okay == true && verifyCaptcha == true) {    // if all the fiels are filled and captcha is verified
         location.href = "/last-page.html";
     }
+
+    setTimeout((disableWarning), 2000);     // after two second remove the red border
 }
 
 function disableWarning() {

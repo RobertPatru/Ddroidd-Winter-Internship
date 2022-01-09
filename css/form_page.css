@@ -26,8 +26,7 @@ input {
 #body-form-page-section {
     background-color: var(--athens-gray);
     /* background-color: crimson; */
-
-   width: 1374px; 
+   width: 80%;
    height: 100%;
 
    display: flex;
@@ -39,11 +38,11 @@ input {
 
 /* ##########################          STYLING THE FORM */
 #form {
-    /* border: 5px red dotted; */
     width: 818px;
-    /* max-height: 537px; */
     height: 537px;
-    /* height: 100%; */
+
+    width: 50%;
+    height: 80%;
 
     display: flex;
     flex-direction: column;
@@ -118,7 +117,8 @@ input {
 
 /* Join Us Btn */
 .container-btn-on-second-page {
-    width: 818px;
+    /* width: 818px; */
+    
     margin-top: 30px;
 
     display: flex;
