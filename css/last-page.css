@@ -3,3 +3,12 @@
     color: var(--prussian-blue);
     font: normal normal var(--font-weight-bold) 48px/65px Open Sans;
 }
+
+.container-whole-last-page {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

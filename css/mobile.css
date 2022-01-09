@@ -112,6 +112,10 @@
     .container-whole-second-page {
         height: 170%;
     }
+
+    #body-form-page-section div h1  {
+        font-size: 40px;
+    }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
