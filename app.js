@@ -30,6 +30,9 @@ function submitForm(event) {
         console.log('NU AU FOST INDEPLINITE CONDITIILE');
 
     }
+
+
+  
 }
 
 function disableWarning() {
@@ -38,8 +41,8 @@ function disableWarning() {
     }
 }
 
-console.log(document.querySelector('.g-recaptcha'));
 
-function recaptcha_callback() {
-    console.log('captcha a fost bifata');
-}
+document.querySelector('.g-recaptcha').addEventListener('click', function() {
+    const response = grecaptcha.getResponse();
+    alert(response);
+});
