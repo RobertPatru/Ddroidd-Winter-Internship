@@ -1,0 +1,148 @@
+:root {
+    /* Colors */
+    --white:             #FFFFFF;
+    --black:             #000000;
+    --athens-gray:       #F4F5F8;
+    --dove-gray:         #707070;
+    --school-bus-yellow: #FFE000;
+    --prussian-blue:     #003C55;
+
+    /* Fonts */
+    --font-weight-light:   300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;  
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.container-whole-first-page {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Styling the header */
+#header {
+    height: 115px;
+    width: 100vw;
+
+    /* using padding with "justify-content: space-between" will make the site look more like in the picture, but will affect it's responsivenes */
+    /* padding: 0 125px; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--prussian-blue);
+}
+
+.title-inside-header {
+    color: var(--athens-gray);
+    letter-spacing: 0px;
+    font-weight: var(--font-weight-bold);
+    font-size: 48px;
+    line-height: 65px;
+}
+
+/* setting the default style for "Join Us" Button */
+.join-us-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--school-bus-yellow);
+    border: 1px solid var(--dove-gray);
+
+    color: var(--prussian-blue);
+    text-decoration: none;
+    font: normal normal var(--font-weight-bold) 17px/23px Open Sans;
+    letter-spacing: 0px;
+    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.join-us-btn:hover {
+    cursor: pointer;
+}
+
+.join-us-btn:active {
+    transform: scale(0.95);
+}
+
+.btn-inside-header {
+   width: 120px;
+   height: 35px;
+   margin: 0 70px;
+}
+
+
+/* the body section of the page */
+#body-page-section {
+    background-color: var(--athens-gray);
+    /* background-color: crimson; */
+
+   width: 1374px; 
+   height: 100%;
+   padding: 100px 0;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   flex-direction: column;
+}
+
+.imgs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 10px;   
+}
+
+.btn-inside-body-page {
+    width: 260px;
+    height: 31px;
+}
+
+
+/* Footer Section */
+#footer {
+    min-height: 114px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dove-gray);
+}
+
+#footer h1 { 
+    color: var(--athens-gray);
+    font: normal normal var(--font-weight-regular) 36px/49px Open Sans;
+    letter-spacing: 0px;
+}
+
+/* the code below makes the cookie gray */
+#footer h1 span {
+    color: var(--athens-gray);
+    filter: grayscale(100%);
+}

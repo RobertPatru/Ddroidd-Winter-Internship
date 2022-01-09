@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ddroidd</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- I kept this style for the header, body section and footer stiles -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/form_page.css">
+    <link rel="stylesheet" href="/css/mobile.css">
+    
+</head>
+<body>
+    <div class="container-whole-second-page">
+        <header id="header">
+            <a href="/index.html">
+                <img src="/img/ddroidd_logo.svg" class="logo">
+            </a>      
+            <h1 class="title-inside-header">Winter Internship</h1>
+            <a href="#" class="join-us-btn btn-inside-header dissappear">Join Us</a>
+        </header>
+
+        <section id="body-form-page-section">
+           
+            
+            <form id="form">
+                <h1 class="form-title">Application Form</h1>
+                <!-- First Name and Last Name togheter -->
+                <div class="whole-name-container">
+                    <div class="first-name-container">
+                        <label>First Name:<span class="red-star">*</span></label>
+                        <input type="text" placeholder="First Name">
+                    </div>
+                    
+                    <div class="last-name-container">
+                        <label>Last Name:<span class="red-star">*</span></label>
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                </div>
+               
+                <h2 class="address-title">Address</h2>
+                <!-- Address Container -->
+                <div class="address-container">
+                    
+                    <div class="address-line-1">
+                        <label>Address Line 1: <span class="red-star">*</span></label>
+                        <input type="text" placeholder="Street name & number">
+                    </div>
+                    <div class="address-line-2">
+                        <label>Address Line 2: <span class="red-star">*</span></label>
+                        <input type="text" placeholder="Suite, apartament">
+                    </div>
+                    <div class="city">
+                        <label>City:<span class="red-star">*</span></label>
+                        <input type="text" placeholder="City">
+                    </div>
+                    <div class="state">
+                        <label>State:<span class="red-star">*</span></label>
+                        <input list="states" placeholder="State">
+                        <datalist id="states">
+                            <option value="Alabama">
+                            <option value="Alaska">
+                            <option value="California">
+                            <option value="Iowa">
+                            <option value="Rhode Island">
+                        </datalist>
+                    </div>
+                    <div class="zip-code">
+                        <label>Zip code:<span class="red-star">*</span></label>
+                        <input type="text" placeholder="Zip Code">
+                    </div>             
+                </div>
+
+                <h2 class="contact-information-title">Contact Information</h2>
+                <!-- Contact Information Container -->
+                <div class="contact-information-container">              
+                    <div class="phone-number">
+                        <label>Phone number:<span class="red-star">*</span></label>
+                        <input type="number" placeholder="555-5555">
+                    </div>
+                    <div class="email-address">
+                        <label>Email address:<span class="red-star">*</span></label>
+                        <input type="email" placeholder="john@doe.com">
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="container-btn-on-second-page">
+                <a href="#" class="join-us-btn btn-second-page">Join Us</a>
+            </div>
+            
+
+        </section>
+
+        <footer id="footer">
+            <h1>Come to the dark side... we have <span>🍪</span></h1>        
+        </footer>
+       
+        <script src="/app.js"></script>
+    </div>
+</body>
+</html>

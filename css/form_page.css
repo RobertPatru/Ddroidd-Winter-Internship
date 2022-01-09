@@ -1,0 +1,149 @@
+label {
+    color: var(--prussian-blue);
+    font: normal normal var(--font-weight-bold) 15px/15px Open Sans;
+    margin-bottom: 10px;
+}
+
+input {
+    /* outline: none; */
+    padding: 5px;
+    outline-color: var(--prussian-blue);
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5),
+                 0 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+.container-whole-second-page {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#body-form-page-section {
+    background-color: var(--athens-gray);
+    /* background-color: crimson; */
+
+   width: 1374px; 
+   height: 100%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   
+}
+
+/* ##########################          STYLING THE FORM */
+#form {
+    /* border: 5px red dotted; */
+    width: 818px;
+    /* max-height: 537px; */
+    height: 537px;
+    /* height: 100%; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* making the input stretch all the width of its container */
+.whole-name-container,
+.contact-information-container {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 20px;
+}
+
+/* arranging all the labels and inputs in a column */
+.first-name-container,
+.last-name-container,
+.phone-number,
+.email-address,
+.address-line-1,
+.address-line-2,
+.city,
+.state,
+.zip-code {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    margin-top: 10px;
+}
+
+/* Arranging the "Address" section of the Form*/
+
+/* Creating the Grid Areas */
+.address-line-1 {   grid-area: address-line-1   }
+.address-line-2 {   grid-area: address-line-2   }
+.city           {   grid-area: city   }
+.state          {   grid-area: state   }
+.zip-code       {   grid-area: zip-code   }
+
+/* Using Grid to arrange the elemnts inside "Address" field of form */
+.address-container {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: 
+        "address-line-1 address-line-1 address-line-1"
+        "address-line-2 address-line-2 address-line-2"
+        "city state zip-code"
+    ;
+}
+
+/* Form Titles style */
+
+/* main title: "Application Form" */
+.form-title {
+    color: var(--prussian-blue);
+    font: normal normal var(--font-weight-bold) 28px/38px Open Sans;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* scondary titles: "Address, Contact Information" */
+.address-title,
+.contact-information-title {
+    color: var(--prussian-blue);
+    font: normal normal var(--font-weight-bold) 18px/19px Open Sans;
+    margin-top: 20px;
+}
+
+.red-star {
+    color: #FC0000;;
+}
+
+/* Join Us Btn */
+.container-btn-on-second-page {
+    width: 818px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn-second-page {
+    font: normal normal var(--font-weight-bold) 17px/23px Open Sans;
+    width: 260px;
+    height: 35px;
+    transform: translateY(-35px);
+}
+
+.btn-second-page:active {
+    transform: translateY(-35px) scale(0.95);
+}
+
+/* I dissabled the "Joing Us" btn from header, on second and third pages */
+.dissappear {
+    background: transparent;
+    border: none !important;
+    font-size: 0;
+    box-shadow: none;
+    width: 260px;
+    margin: 0 !important;
+}
+
+.dissappear:hover {
+    cursor: default;
+}

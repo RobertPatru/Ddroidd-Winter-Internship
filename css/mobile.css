@@ -1,0 +1,8 @@
+/* On my display without this the site wouldn't look right */
+/* I used Chrome DevTools to simulate a  1920 x 1080 display in order to create the website */
+/* 
+@media (max-width: 1600px) {
+    .btn-second-page {
+        transform: translate(0px)
+    }
+} */

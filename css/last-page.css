@@ -1,0 +1,5 @@
+#body-form-page-section div h1 {
+    text-align: center;
+    color: var(--prussian-blue);
+    font: normal normal var(--font-weight-bold) 48px/65px Open Sans;
+}
