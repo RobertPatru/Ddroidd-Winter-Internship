@@ -4,7 +4,7 @@ const joinUsBtn = document.querySelector('.submit-btn');
 
 console.log(joinUsBtn);
 
-joinUsBtn.addEventListener('click', submitForm);
+joinUsBtn.addEventListener('form', submitForm);
 
 function submitForm(event) {
     event.preventDefault();
