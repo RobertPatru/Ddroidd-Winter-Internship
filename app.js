@@ -38,7 +38,7 @@ function disableWarning() {
     }
 }
 
-console.log(document.querySelector('.g-recaptcha').value);
+console.log(document.querySelector('.g-recaptcha'));
 
 function recaptcha_callback() {
     console.log('captcha a fost bifata');
